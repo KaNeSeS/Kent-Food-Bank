@@ -44,9 +44,7 @@
 		  // include "kfb_head.html";
 		  
 		  // define variables and set to empty values
-		  $fname = $lname = $email = $phonenumber = $apptype = $crime = $lift = $whyVolunteer = "";
-		  $activities = array();
-		  $availability = array();
+		  $fname = $lname = $email = $phonenumber = $apptype = $crime = $lift = $activities = $availability = $whyVolunteer = "";
 		  
 		  $fnameErr = $lnameErr = $emailErr = $phonenumberErr = $apptypeErr = $crimeErr = $liftErr = $whyVolunteerErr = $activitiesErr = $availabilityErr = "";
 		  
@@ -116,33 +114,19 @@
 			   }
 			   
 			   // Check activities
-			   if(!empty($_POST['activities[]'])) {
-					$activities = $_POST['activities[]'];
-					$validActivities = array("clothing","office","food", "driver");
-					foreach ($activities as $activity) {
-					   if (!in_array($activity, $validActivities)) {
-						 $activitiesErr = "please select the activities provided";
-						 $isValid = false;
-					   }
-					}
-			   } else {
+			   if(empty($_POST['activities'])) {
 					$activitiesErr = "required field";
 					$isValid = false;
+			   } else {
+					$activities = implode(", ", $_POST['activities']);
 			   }
 			   
 			   // Check availability
-			   if(!empty($_POST['availability[]'])) {
-					$availability = $_POST['availability[]'];
-					$validAvailability = array("Monday","Tuesday","Wednesday", "Thursday", "Friday");
-					foreach ($availability as $ava) {
-					   if (!in_array($ava, $validAvailability)) {
-						 $availabilityErr = "please select the options provided";
-						 $isValid = false;
-					   }
-					}
-			   } else {
+			   if(empty($_POST['availability'])) {
 					$availabilityErr = "required field";
 					$isValid = false;
+			   } else {
+					$availability = implode(", ", $_POST['availability']);
 			   }
 			   
 			   // Check reason to apply
@@ -158,26 +142,19 @@
 			   
 					# write the volunteer info into the data base
 					// Escape the data
-					$fname = $_POST['fname'];
 					$fname = mysqli_real_escape_string($conn, $fname);
 					
-					$lname = $_POST['lname'];
 					$lname = mysqli_real_escape_string($conn, $lname);
 					
-					$email = $_POST['email'];
 					$email = mysqli_real_escape_string($conn, $email);
 					
-					$phone = $_POST['phonenumber'];
 					$phone = mysqli_real_escape_string($conn, $phone);
 					
-					$apptype = $_POST['apptype'];
 					$apptype = mysqli_real_escape_string($conn, $apptype);
 					
-					$activities = $_POST['activities[]'];
-					#$act = mysqli_real_escape_string($conn, $act);
+					$activities = mysqli_real_escape_string($conn, $activities);
 					
-					$availability = $_POST['availability[]'];
-					#$availability = mysqli_real_escape_string($conn, $availability);
+					$availability = mysqli_real_escape_string($conn, $availability);
 					
 					$availability_text = $_POST['availability_text'];
 					$availability_text = mysqli_real_escape_string($conn, $availability_text);
@@ -187,7 +164,7 @@
 					
 					// Define the query
 					$sql = "INSERT INTO volunteers (first_name, last_name, email, phone, Type, Activities, Availability)
-											VALUES ('$fname', '$lname', '$email', '$phone', '$apptype', '$activities', '$availability')";
+											VALUES ('$fname', '$lname', '$email', '$phonenumber', '$apptype', '$activities', '$availability')";
 											
 					$result = @mysqli_query($conn, $sql);
 					if(!$result) {
