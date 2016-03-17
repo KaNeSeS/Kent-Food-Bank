@@ -21,7 +21,6 @@ $errors = [];
 $missing = [];
 }
 ?>
-<!DOCTYPE html>
 <?php include "kfb_head.php" ?>
 
 <body class="no-trans kfb_background">
@@ -179,7 +178,7 @@ $missing = [];
 						<!-- sidebar start -->
 						<!-- ================ -->
 						    
-								<?php include "kfb_sidebar_contactform.php" ?>
+								<?php #include "kfb_sidebar_contactform.php" ?>
 							
 						<!-- sidebar end -->
 

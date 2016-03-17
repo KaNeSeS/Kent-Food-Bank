@@ -60,7 +60,7 @@
 							  <li>Birch Creek Annex is open every Monday between the hours of 10am - 1pm</li><BR>
 						   </ul>	
 							  
-						   See our full schedule... 
+						   <a href="http://kaneses.greenrivertech.net/kfb_services.php">See our full schedule...</a> 
 					  
 					</div>
 

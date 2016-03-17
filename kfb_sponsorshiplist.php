@@ -71,13 +71,6 @@ else
                         echo "Connection info: <b>" .$conn->host_info ."</b><br>";
 
 
-
-                        // combine everything into a trans transaction
-                        // rollback before closing connection so that the db
-                        // gets reset.
-                        //$sql = "START TRANSACTION";
-                        //$conn->query($sql);
-
                         ?>
 
                     </div> <!-- id sqlconnection -->
@@ -118,7 +111,7 @@ else
 
                         </div>
 
-                        <p class = 'todo'>TODO: Replace sql query box with a single line query that searches all fields</p>
+                        <!--<p class = 'todo'>TODO: Replace sql query box with a single line query that searches all fields</p>-->
                         <!--<pre>-->
                         <?php //#echo "$sqlfile"; ?>
                         <!--</pre>-->
@@ -137,7 +130,7 @@ else
                         $query = "SELECT `last_name` as 'Last Name',`first_name` as 'First Name', `email` as 'Email',
   `phone` as Phone,`Comments`, `create_date`, `last_update`, `pkey` FROM `Sponsors`
 WHERE `last_name` LIKE '%$filter%' || `first_name` LIKE '%$filter%' || `email` LIKE '%$filter%' || `phone` LIKE '%$filter%' || `Comments` LIKE '%$filter%';";
-                    echo "test1: $query";
+                   # echo "test1: $query";
                         
                         if ($filter == "*" || $filter == "")
                         {
@@ -197,7 +190,7 @@ WHERE `last_name` LIKE '%$filter%' || `first_name` LIKE '%$filter%' || `email` L
                         </script>
 
 
-                        <p class = 'todo'>TODO: Add functionality to be able sort by column when clicking on column header</p>
+                        <!--<p class = 'todo'>TODO: Add functionality to be able sort by column when clicking on column header</p>-->
                         <table>
 
                             <?php

@@ -76,21 +76,13 @@ else
 
 
 
-                        // combine everything into a trans transaction
-                        // rollback before closing connection so that the db
-                        // gets reset.
-                        //$sql = "START TRANSACTION";
-                        //$conn->query($sql);
-
                         ?>
 
                     </div> <!-- id sqlconnection -->
 
 
                     <!-- List Volunteers  -->
-                    <div id = "div5" name ="div5" class="pageblock" style=" margin-top: 10px;" >
-
-
+                    <div id = "div5" name ="div5" class="pageblock" style=" margin-top: 10px; " >
 
                         <?php
                         $sqlfile = file_get_contents("kfb_volunteer_list.sql");
@@ -113,10 +105,11 @@ else
                                 ?>
 
                                 <!--    File Name: <input type="text" name="filename" value=""><br/>-->
-                                <textarea  name="textdata" class = "kfb_queryeditbox"><?php echo "$sqlfile"; ?> </textarea><br/><br>
+                                <textarea  name="textdata" class = "kfb_queryeditbox" style='display: none'><?php echo "$sqlfile"; ?> </textarea><br/><br>
                                 <input type="submit" name="submitquery" value="Search" class="kfb_button">
+                                <input type="text" name="volunteer_query" value="*">
                             </form>
-                            <p class = 'todo'>TODO: Replace sql query box with a single line query that searches all fields</p>
+                            <!--<p class = 'todo'>TODO: Replace sql query box with a single line query that searches all fields</p>-->
 
                         </div>
 
@@ -131,7 +124,30 @@ else
                         <!-- List Volunteers  -->
                         <div id = "div6" name ="div6" class="pageblock" style=" margin-top: 10px;"; >
                         <?php
-                        $query = $sqlfile;
+                        
+                        
+                        if (isset($_POST))
+                        {
+                        
+                            $filter = "*";
+                            $filter= $_POST["volunteer_query"];
+                        
+                            #echo "test: $filter";
+                            $query = "SELECT `last_name` as 'Last Name',`first_name` as 'First Name', `email` as 'Email',
+                            `phone` as Phone,`Comments`, `create_date`, `last_update`, `pkey` FROM `volunteers`
+                            WHERE `last_name` LIKE '%$filter%' || `first_name` LIKE '%$filter%' || `email` LIKE '%$filter%' || `phone` LIKE '%$filter%' || `Comments` LIKE '%$filter%';";
+                            # echo "test1: $query";
+                        
+                            if ($filter == "*" || $filter == "")
+                            {
+                                $query = $sqlfile;
+                            }
+                        
+                        }
+                        
+                        
+                        
+                       #$query = $sqlfile;
 
                         //$result = $conn->query($query)->fetch_assoc();;
                         $result = $conn->query($query);
@@ -184,7 +200,7 @@ else
                             </script>
 
 
-                            <p class = 'todo'>TODO: Add functionality to be able sort by column when clicking on column header</p>
+                            <!--<p class = 'todo'>TODO: Add functionality to be able sort by column when clicking on column header</p>-->
                         <table>
 
                             <?php

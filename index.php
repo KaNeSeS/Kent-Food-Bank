@@ -32,17 +32,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="main col-md-9">
-					<!--<h3><i>Serving low-income residents of the Kent School District</i></h3>  --> <!-- slide bar -->
-					<!-- <div id = "slideshow"  class="pageblock slideshow" style = "text-align:center; background-color: black; color:white;"> -->
-					<!-- moved by Kandis 2/29 -->
-
-
-<!--					<div class="pageblock">-->
-<!--						<input type="button" id="show_login" value="Show Login" onclick="showpopup()"><br>-->
-<!--						<input type="button" id="close_login" value="close_login" onclick="hidepopup()"><br>-->
-<!--						Note: Strictly for testing\debugging purposes. Will be removed after testing is completed.-->
-<!---->
-<!--					</div >-->
+					
 
 					<div id="carousel-example-generic" class="carousel slide pageblock" style = "background: transparent "data-ride="carousel" data-interval="5000">
 						<!-- Indicators -->
@@ -229,7 +219,7 @@
                         -->
 						<iframe src="https://calendar.google.com/calendar/embed?src=bbx719%40gmail.com&ctz=America/Los_Angeles" style="border: 0" width="500" height="400" frameborder="0" scrolling="no"></iframe>
 					</div>
-					<span class ="moreinfo" ><a href="http://kaneses.greenrivertech.net/kfb_calendar.html">More About Scheduled Events ...</a></span>
+					<span class ="moreinfo" ><a href="http://kaneses.greenrivertech.net/kfb_calendar.php">More About Scheduled Events ...</a></span>
 				</div>
 
 
