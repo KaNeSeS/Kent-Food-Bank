@@ -3,34 +3,33 @@
 						<aside class="col-md-3">
 						  
 							<div class="sidebar">
-							 
 								<nav class="affix-menu scrollspy">
-								  
-									<ul class="smooth-scroll nav nav-pills nav-stacked kfb_sidebar">
-									   <div class ="kfb_sidebar_title">Page Topics</div>
-										<li class="active"><a href="#header-1">Kent Food Bank Location</a></li>
-										<li><a href="#header-3">About US</a></li>
-										<li><a href="#header-4">Services We provide</a></li>
-										<li><a href="#header-5">Ways to Donate</a></li>
-										<li><a href="#header-8">Volunteering</a></li>
-										<li><a href="#header-7">Our Event Calendar</a></li>
-										<li><a href="#header-2">Contact US</a></li>
+
+									<div class= "kfb_sidebar">
+									  Page Topics
+									  <ul class="smooth-scroll nav nav-pills nav-stacked">
 										
-										
-										
-										<!-- Neal
-										this is a test
-										test
-										
-										<li><a href="#header-6">Visit us on Facebook</a></li>
-										<li><a href="#header-9">Header - 9</a></li>
-										<li><a href="#header-10">Header - 10</a></li>
-										<li><a href="#header-11">Header - 11</a></li>
-										<li><a href="#header-12">Header - 12</a></li>
-										<li><a href="#header-13">Header - 13</a></li>
-										-->
-									</ul>
 									
+										  <li class="active"><a href="#header-1">Kent Food Bank Location</a></li>
+										  <li><a href="#header-3">About US</a></li>
+										  <li><a href="#header-4">Services We provide</a></li>
+										  <li><a href="#header-5">Ways to Donate</a></li>
+										  <li><a href="#header-8">Volunteering</a></li>
+										  <li><a href="#header-7">Our Event Calendar</a></li>
+										  <li><a href="http://kaneses.greenrivertech.net/kfb_contactform.php">Contact US</a>
+										  
+										  <!-- Neal
+										  
+										  
+										  <li><a href="#header-6">Visit us on Facebook</a></li>
+										  <li><a href="#header-9">Header - 9</a></li>
+										  <li><a href="#header-10">Header - 10</a></li>
+										  <li><a href="#header-11">Header - 11</a></li>
+										  <li><a href="#header-12">Header - 12</a></li>
+										  <li><a href="#header-13">Header - 13</a></li>
+										  -->
+									  </ul>
+									</div>
 									
 									<?php include "kfb_paypal.html" ?>
 									

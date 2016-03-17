@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php include "kfb_head.php" ?>
  
 <body class="no-trans kfb_background">
@@ -47,8 +46,8 @@
                                                 
                                                 <p>
                                                       The KFB is open four days a week at the Alliance Center in downtown Kent and operates a second location one day a week in the
-                                                      Birch Creek Apartment Complex on the top of East Hill Kent.  The Alliance Center distribution operates  Tuesday-Friday from  9am - 2pm
-                                                      with the clothing bank 10am - 12:30pm.  The Birch Creek Annex is open for distribution of food on Thursdays from 10 am - 1pm.  Along with the
+                                                      Birch Creek Apartment Complex on the top of East Hill Kent.  The Alliance Center distribution operates M, T, W and F from 10 am - 2 pm
+                                                      with the clothing bank 10-12:30.  The Birch Creek Annex is open for distribution of food on Thursdays from 10 am - 1pm.  Along with the
                                                       19 hours of distribution the food bank is open for 1 hour on the second Wednesday of each month to better accommodate working families
                                                       with supplemental food.  The KFB offers all of our services with a self-select method of distribution.  Clients may choose their own food
                                                       from the available resources.
@@ -92,6 +91,6 @@
                  <!-- sidebar start -->
  
  
-<?php include "kfb_footer.html" ?>
+<?php include "kfb_footer.php" ?>
 </body>
 </html>

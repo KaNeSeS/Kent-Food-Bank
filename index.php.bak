@@ -44,7 +44,7 @@
 <!---->
 <!--					</div >-->
 
-					<div id="carousel-example-generic" class="carousel slide pageblock" style = "background: transparent "data-ride="carousel" data-interval="5000">
+					<div id="carousel-example-generic" class="carousel slide pageblock" style = "background: transparent "data-ride="carousel" data-interval="2000">
 						<!-- Indicators -->
 						<ol class="carousel-indicators">
 							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -106,10 +106,6 @@
 
 					</div> <!-- Carousel -->
 
-
-					<?php include "kfb_closesign_dialog.php"?>
-
-
 					<div id = "location" class="pageblock">
 						<!-- page-title end -->
 						<div id="header-1">
@@ -118,7 +114,7 @@
 							<div class="span6" id="footerArea3">
 								<table style = "border: none">
 									<tr>
-										<td style =  "width:400px; border: none; padding-right: 25px">
+										<td style =  "width:400px; border: none; ">
 											<iframe class = "kfb_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.513777590259!2d-122.24086688437717!3d47.38240757917045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54905bfdbff40b47%3A0x63c620b8cc6e0617!2s515+W+Harrison+St+%23107%2C+Kent%2C+WA+98032!5e0!3m2!1sen!2sus!4v1453578208942"
 													width="100%" height="225px" frameborder="0" style="border:0; box-shadow: 3px 3px 3px #989898" ></iframe>
 										</td>
@@ -288,6 +284,6 @@
 
 <!-- </div> -->
 
-<?php include "kfb_footer.php" ?>
+<?php include "kfb_footer.html" ?>
 </body>
 </html>

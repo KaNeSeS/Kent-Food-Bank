@@ -10,7 +10,7 @@ $pass = ' ';
 $_SESSION["access"] = false;
 
 
-if ($id == 'kfb' && $pass1 == 'kfb')
+if ($id == 'kfbstaff' && $pass1 == 'kfb@dm1n')
 {
    $_SESSION["access"] = true;
    //echo $_SESSION["access"] ;

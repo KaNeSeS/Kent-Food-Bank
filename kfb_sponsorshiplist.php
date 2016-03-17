@@ -109,10 +109,12 @@ else
                                 ?>
 
                                 <!--    File Name: <input type="text" name="filename" value=""><br/>-->
-                                <textarea  name="textdata" class = "kfb_queryeditbox"><?php echo "$sqlfile"; ?> </textarea><br/><br>
+                                <textarea  name="textdata" class = "kfb_queryeditbox"  style ="display:none" ><?php echo "$sqlfile"?></textarea><br/><br>
                                 <input type="submit" name="submitquery" value="Search" class="kfb_button">
+                                <input type="text" name="sponsor_query" value="*">
                             </form>
-
+                        
+                        
 
                         </div>
 
@@ -127,7 +129,22 @@ else
                     <!-- Sponsors List  -->
                     <div id = "div6" name ="div6" class="pageblock" style=" margin-top: 10px;"; >
                         <?php
-                        $query = $sqlfile;
+                        
+                        $filter = "*";
+                        $filter= $_POST["sponsor_query"];
+                        
+                        #echo "test: $filter";
+                        $query = "SELECT `last_name` as 'Last Name',`first_name` as 'First Name', `email` as 'Email',
+  `phone` as Phone,`Comments`, `create_date`, `last_update`, `pkey` FROM `Sponsors`
+WHERE `last_name` LIKE '%$filter%' || `first_name` LIKE '%$filter%' || `email` LIKE '%$filter%' || `phone` LIKE '%$filter%' || `Comments` LIKE '%$filter%';";
+                    echo "test1: $query";
+                        
+                        if ($filter == "*" || $filter == "")
+                        {
+                            $query = $sqlfile;
+                        }
+                        
+                        #$query = $sqlfile;
 
                         //$result = $conn->query($query)->fetch_assoc();;
                         $result = $conn->query($query);

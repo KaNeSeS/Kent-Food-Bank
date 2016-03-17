@@ -36,7 +36,12 @@ a:hover
     */
 }
 
-
+    .kfb_closedsign_image
+    {
+        border-width: 1px;
+        width: auto;
+        height: 40px;
+    }
 
     .kfb_paypal
    {

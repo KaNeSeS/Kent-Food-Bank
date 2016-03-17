@@ -78,7 +78,7 @@
 		<!-- page-wrapper end -->
 		<!-- <a href= "kfb_hours.php">kfb_hours</a>-->
 	</div>
-	<?php include "kfb_footer.html" ?>
+	<?php include "kfb_footer.php" ?>
 	</body>
 	
 <html>

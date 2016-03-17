@@ -1,8 +1,7 @@
 
-.column-left{ float: left; width: 10%; }
+.column-left{ float: left; width: 15%; }
 .column-right{ float: right; width: 15%; }
-.column-center{ display: inline-block; width: 75%; } 
-
+.column-center{ display: inline-block; width: 70%; }
 
 /*.services
    {
@@ -16,12 +15,10 @@
 
     }
 
-
-
     a:hover
     {
-        background-color: white; /*#ffa31a; /*orange;*/
-        
+        background-color: orange;
+
 
         /*    color:blue;
          *    font-size: 14pt;
@@ -38,7 +35,7 @@
 
     tr:hover
     {
-        background-color: #ffa31a !important;
+        background-color: goldenrod !important;
 
     }
 
@@ -70,8 +67,8 @@ h1
 
     .kfb_background
     {
-        /*  background-color: white; /*#4d9900; */
-        background-image: url("kfb_images/bricks1.jpg");       /* "/images/1225150901c.jpg"); */
+          background-color: white; /*#4d9900; */
+        /* background-image: url("kfb_images/stone-brick-wall-red-00252.jpg");       /* "/images/1225150901c.jpg"); */
         background-attachment: fixed;
     }
 
@@ -80,25 +77,19 @@ h1
         /* to be used for changing the style of buttons */
     }
 
-    .kfb_closedsign_image
-    {
-        border-width: 1px;
-        width: auto;
-        height: 40px;
-    }
-    
-    
-    
+
 
     /*Data table on Admin page*/
     .kfb_datatable tr,th,table
     {
         border: 0px solid black !important;
         padding: 5px;
-        font-family: "Calibri" !important;
+        font-family: "Calibri"; !important;
         font-size: 12pt !important;
         text-align: left;
         /*list-style-type: square; */
+
+
     }
 
 
@@ -136,7 +127,7 @@ h1
         /*    border-width: 1px; */
     }
 
-/*
+
     .kfb_form
     {
 
@@ -150,19 +141,11 @@ h1
         padding: 10px;
         box-shadow: 5px 5px 5px #004d00; /* #DE2626 */
 
-    }*/
-
-	.kfb_map {
-		background: #ffa31a; /*orange;*/
-		border: 2px solid black;
-        border-collapse: collapse;
-		border-radius: 9px;
-		padding: 3px;
-	}
+    }
 
     /* had to separate these into indiviual defination
        because for unknown reasons when grouped together
-       they cause style problems elsewhere in the site.  -Neal */
+       they cause style problems else in the site.  -Neal */
 
     .hoursTable td
     {
@@ -199,24 +182,18 @@ h1
     {
        /* kfb_logo_higher_res.png */
         border-width: 0px;
-        width: 100%;
-        height: auto; /* 90px; */
+        width: auto;
+        height: 90px;
         /* box-shadow: 2px 2px 2px #DE2626 */
     }
 
-.kfb_menubar-button:hover {
-    background-color: white;
-}
 
     .kfb_menubar-button
     {
         color:black;
-        border: 1px solid black; 
-       /* border-width: 3px;  /* added 2/29 */
-       /* border-color: black; */
-       
-       border-radius: 9px;
-       background-color: #ffa31a; /*orange; /*#2d862d; */ 
+        border-width: 3px;  /* added 2/29 */
+        border-color: black;
+        background-color:#2d862d;
     }
 
 
@@ -239,7 +216,7 @@ h1
         text-align: left;
         margin-top: 10px;
         padding: 10px;
-        /*box-shadow: 2px 2px 2px #004d00; /!*#DE2626*!/*/
+        box-shadow: 5px 5px 5px #004d00; /*#DE2626*/
     }
 
 
@@ -249,13 +226,13 @@ h1
     {
         max-width: 900px; /*800px;*/
         font-size: 12pt;
-        background-color: #e6e6e6;/*white; /* #daf1da; /*#ffffff;*/
+        background-color: white; /* #daf1da; /*#ffffff;*/
         border: solid;
         border-width: 0px; /*1px;*/
         text-align: left;
         margin-top: 10px;
         padding: 10px;
-        box-shadow: 3px 3px 3px gray  /*orange; /* #004d00; /*#DE2626*/ /*#ffa31a*/
+        box-shadow: 5px 5px 5px #004d00; /*#DE2626*/
     }
 
 
@@ -282,10 +259,10 @@ h1
 
     .kfb_sidebar
     {
-        background-color: #e6e6e6; /*white; /*#daf1da; /*#c7ebc7; /*white;*/
-        color: #ffa31a; /*orange; /*black; */
+        background-color: white; /*#daf1da; /*#c7ebc7; /*white;*/
+        color: orange; /*black; */
         margin-top: 10px;
-        box-shadow: 1px 1px 1px gray; /*#004d00; /* #a1dda1; /*#004d00; /*#DE2626; */
+        box-shadow: 5px 5px 5px #004d00; /* #a1dda1; /*#004d00; /*#DE2626; */
         border: solid;
         border-width: 1px;
         padding: 5px;
@@ -295,7 +272,7 @@ h1
      /* Added by Neal */
     .kfb_sidebar h3
     {
-        color: #ffa31a; /*orange; /*black; */
+        color: orange; /*black; */
         
     }
     
@@ -304,17 +281,17 @@ h1
     .kfb_sidebar_title
     {
         text-align: center;  /* added by Kandis*/
-        color: #ffa31a; /*orange; /* #004d00; /*blue;*/
+        color: orange; /* #004d00; /*blue;*/
         
     }
 
 
     .kfb_topmenubar
     {
-        background-color:#d9d9d9; /* #bfbfbf; /*#004d00; /* #2d862d; /* #004d00;*/
+        background-color: #004d00; /* #2d862d; /* #004d00;*/
         border-width: 0px;
         padding: 0px;
-        box-shadow:  1px 2px 3px #ffa31a; /*#004d00; /*#DE2626;*/   
+        box-shadow:  1px 2px 3px #004d00; /*#DE2626;*/   
     }
 
 
@@ -323,7 +300,7 @@ h1
         text-align: center;
         border-width: 1px;
         /*  background-image: url("/images/1225150901c.jpg"); */
-        background-color: #e6e6e6; /*white; /* #daf1da; /*#a1dda1; #c7ebc7; #ceff99;  #2d862d;  white*/
+        background-color: white; /* #daf1da; /*#a1dda1; #c7ebc7; #ceff99;  #2d862d;  white*/
         color: #004d00; /*black; */
     }
 
@@ -365,7 +342,7 @@ p.todo:hover
 
 /* added by Kandis but not being used */
    .volunteer_app {
-       color: #ffa31a !important;
+       color: orange !important;
        text-align: center;
 
    }

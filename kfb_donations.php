@@ -106,11 +106,7 @@ else
 			 <!--This line and the BUTTON will not be printed-->
 				<input type="button" value="Print List" onclick="PrintElem('#topten')" />
 				<br><br>
-					
-				<h3>Clothing Bank</h3>Accepts donations on T, W, and F from 10am - 12:30pm of
-				gently used men's, women's, children's, clothing along with small household items at
-				515 W. Harrison Street, Suite 107 
-			
+					<a href= "kfb_hours.php">Kent Food Bank Hours</a>
 			</div>
         </div>
         
@@ -118,7 +114,7 @@ else
 			<div id ="sponsorship levels">
 				<br id ="header-2">
 				
-				<h1>Sponsorship Levels</h1>
+			<h1>Sponsorship Levels</h1>
 				
 				<p>We are excited this year to provide you with a number of different options to support the Kent Food Bank Annual Breakfast with.
 				We have two different payment options, a one-time sponsorship payment or monthly installments. Both options	will make
@@ -242,6 +238,6 @@ else
 		</div>
 		<!-- page-wrapper end -->
 	
-   <?php include "footer.html" ?>
+   <?php include "kfb_footer.php" ?>
 </body>
 <html>

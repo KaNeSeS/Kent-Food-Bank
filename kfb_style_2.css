@@ -79,7 +79,12 @@ h1
 {
     /* to be used for changing the style of buttons */
 }
-
+    .kfb_closedsign_image
+    {
+        border-width: 1px;
+        width: auto;
+        height: 40px;
+    }
 
 
 /*Data table on Admin page*/

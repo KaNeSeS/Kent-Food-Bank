@@ -25,21 +25,15 @@
 						<!-- main start -->
 						
 						<div class="main col-md-9">					
-							<div id = id1 class = "pageblock">
+							<div id = \id1 class = "pageblock">
 															
 								<h1 align="center"> Volunteer</h1>
-								
+								<p align="center"><a href = "kfb_apply_form.php" target="_blank">Volunteer Application</a></p>
 								
 							</div>
 													
 							<div id = id2 class = "pageblock">
-								
-								<p align="center"><a href = "kfb_apply_form.php" target="_blank">Volunteer Application</a></p>
-								<id="header-1">
-								
-								<h3 align="center">Volunteer Opportunities</h3>
-								<id="header-2">
-								
+								<h2>Volunteer Opportunities</h2> 
 								<p>The Kent Food Bank and Emergency Services exists to serve the Kent School District area. The KFB supplies food, clothing, resource referrals, and emergency financial assistance to persons in need living within our service area.</p>
 								<h3>CLOTHING:</h3>
 								<p>Volunteers receive, sort and organize donated clothing and assist clients in their shopping.</p>
@@ -58,9 +52,11 @@
 						<!-- sidebar start -->
 						<!-- ================ -->
 						
-						<?php include "kfb_volunteer_sidebar.php" ?>
+							<?php include "kfb_volunteer_sidebar.php" ?>
 						
 						<!-- sidebar end -->
+
+						
 
 					</div>
 				
@@ -77,6 +73,6 @@
  			<!-- sidebar start -->
 
 
-<?php include "kfb_footer.php" ?>
+<?php include "kfb_footer.html" ?>
 </body>
 <html>
